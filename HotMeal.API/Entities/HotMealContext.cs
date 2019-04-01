@@ -13,7 +13,7 @@ namespace HotMeal.API.Entities
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<Customer> Customers { get; set; }
-
+        public DbSet<OrderList> OrderLists { get; set; }
     }
 
 }

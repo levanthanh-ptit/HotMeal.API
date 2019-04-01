@@ -15,15 +15,13 @@ namespace HotMeal.API.Services
                 return true;
             }
 
-            // the field are separated by ",", so we split it.
+            // split field by ','.
             var fieldsAfterSplit = fields.Split(',');
 
             // check if the requested fields exist on source
             foreach (var field in fieldsAfterSplit)
             {
-                // trim each field, as it might contain leading 
-                // or trailing spaces. Can't trim the var in foreach,
-                // so use another var.
+
                 var propertyName = field.Trim();
 
                 // use reflection to check if the property can be

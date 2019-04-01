@@ -11,9 +11,10 @@ using System;
 namespace HotMeal.API.Migrations
 {
     [DbContext(typeof(HotMealContext))]
-    partial class HotMealContextModelSnapshot : ModelSnapshot
+    [Migration("20190330065941_HotMealMigrtion")]
+    partial class HotMealMigrtion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -22,10 +22,12 @@ namespace HotMeal.API.Controllers
         private IPropertyMappingService _propertyMappingService;
         private ITypeHelperService _typeHelperService;
 
-        public CoursesController(IHotMealRepository hotMealRepository,
+        public CoursesController(
+            IHotMealRepository hotMealRepository,
             IUrlHelper urlHelper,
             IPropertyMappingService propertyMappingService,
-            ITypeHelperService typeHelperService)
+            ITypeHelperService typeHelperService
+            )
         {
             _hotMealRepository = hotMealRepository;
             _urlHelper = urlHelper;

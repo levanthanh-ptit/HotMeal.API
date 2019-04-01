@@ -49,10 +49,10 @@ namespace HotMeal.API.Services
                 return true;
             }
 
-            // the string is separated by ",", so we split it.
+            // split field by ','.
             var fieldsAfterSplit = fields.Split(',');
 
-            // run through the fields clauses
+            // loop through.
             foreach (var field in fieldsAfterSplit)
             {
                 // trim
